@@ -24,6 +24,7 @@ header .container {
     margin: 0 auto;
     justify-content: center;
     display: flex;
+    padding: 10px;
 }
 
 body {
@@ -51,7 +52,7 @@ body {
     border: none;
 }
 
-.botoes{
+.botoes {
     margin-top: 10px;
 }
 
@@ -90,4 +91,56 @@ form {
     border-top: 1px solid rgba(0, 0, 0, 1);
 }
 
+@media (max-width: 768px) {
+    #corpoPg {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
+    .container {
+        flex-direction: column;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuHamburger {
+        margin-top: 10px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    .formCadastro input,
+    .botoes button {
+        width: 100%;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .formCadastro input,
+    .botoes button {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    #corpoPg {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
